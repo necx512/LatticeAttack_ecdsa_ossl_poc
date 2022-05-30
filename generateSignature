@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -f outSigGenk
+for i in `seq 0 $1`
+do
+	./testECDSAk | tail -n 4 >> outSigGenk # temp
+done
